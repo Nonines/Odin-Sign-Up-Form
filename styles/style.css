@@ -10,6 +10,22 @@
     --color-text-white: #f1e9e9;
 }
 
+a {
+    color: inherit;
+}
+
+a:link, a:visited {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
 body {
     height: 100vh;
 }
@@ -23,13 +39,13 @@ aside {
     display: block;
     position: relative;
     width: 35%;
+    color: var(--color-text-white);
     background-image: url(./../images/plant.avif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 aside .logo {
-    color: var(--color-text-white);
     font-size: 3rem;
 
     display: flex;
@@ -46,6 +62,15 @@ aside .logo {
 
 .logo img {
     height: 100%;
+}
+
+aside > :last-child {
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+
+    position: absolute;
+    bottom: 0%;
 }
 
 main {
