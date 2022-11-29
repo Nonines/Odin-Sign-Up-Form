@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* :root {
@@ -7,8 +9,7 @@
 } */
 
 body {
-    height: 700px;
-    margin: 0px;
+    height: 100vh;
 }
 
 .container {
@@ -21,10 +22,22 @@ aside {
     width: 35%;
     background-image: url(./../images/plant.avif);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 main {
     display: block;
     width: 65%;
+}
+
+main .introduction {
+    height: 30%;
+}
+
+main .form-container {
+    height: 40%;
+}
+
+main .account {
+    height: 30%;
 }
