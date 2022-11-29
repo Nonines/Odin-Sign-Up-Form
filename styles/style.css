@@ -9,6 +9,7 @@
     --color-bg-dark: rgba(6, 7, 8, 0.59);
     --color-text-white: rgb(241, 233, 233);
     font-size: 3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -28,7 +29,7 @@ a:active {
 }
 
 body {
-    height: 100vh;
+    height: 140vh;
 }
 
 .container {
@@ -52,7 +53,7 @@ aside .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 15%;
     width: 100%;
     padding: 2%;
     background-color: var(--color-bg-dark);
@@ -88,9 +89,14 @@ main > :is(.intro, .account) {
     background-color: var(--color-bg-base);
 }
 
+main .form-container {
+    height: 30%;
+}
+
 main .intro {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -102,8 +108,4 @@ main .intro > p {
 
 main .intro > :is(p:first-child, p:last-child) {
     margin-top: 3%;
-}
-
-main .form-container {
-    height: 30%;
 }
