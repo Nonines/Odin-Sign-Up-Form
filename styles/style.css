@@ -8,7 +8,7 @@
     --color-bg-base: rgb(247 247 247);
     --color-bg-dark: rgba(6, 7, 8, 0.59);
     --color-text-white: rgb(241, 233, 233);
-    font-size: 3vh;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -29,7 +29,7 @@ a:active {
 }
 
 body {
-    height: 140vh;
+    height: 164vh;
 }
 
 .container {
@@ -47,7 +47,7 @@ aside {
     background-size: cover;
 }
 
-aside .logo {
+.logo {
     font-size: 3rem;
 
     display: flex;
@@ -64,6 +64,10 @@ aside .logo {
 
 .logo img {
     height: 100%;
+}
+
+.logo p {
+    font-size: 10vh;
 }
 
 aside > :last-child {
@@ -93,7 +97,7 @@ main .form-container {
     height: 30%;
 }
 
-main .intro {
+.intro {
     font-size: 1.1rem;
     font-weight: 700;
 
@@ -102,10 +106,46 @@ main .intro {
     justify-content: flex-end;
 }
 
-main .intro > p {
+.intro > p {
     width: 80%;
 }
 
-main .intro > :is(p:first-child, p:last-child) {
+.intro > :is(p:first-child, p:last-child) {
     margin-top: 3%;
+}
+
+.form-container > h3 {
+    padding-bottom: 3%;
+}
+
+.form-container > form {
+    width: 70%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.form-container div {
+    width: 100%;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: small;
+}
+
+.form-container input {
+    width: 100%;
+    height: 32px;
+    padding: 2px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-container input:focus {
+    border: 1px solid blue;
 }
