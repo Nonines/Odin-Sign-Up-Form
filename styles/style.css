@@ -4,6 +4,16 @@
     margin: 0px;
 }
 
+@font-face {
+    font-family: norseBold;
+    src: url(./../fonts/Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: rayligRegular;
+    src: url(./../fonts/RayligRegular.otf);
+}
+
 :root {
     --color-bg-base: rgb(247 247 247);
     --color-bg-dark: rgba(6, 7, 8, 0.59);
@@ -15,7 +25,7 @@
     --color-shadow-darker: rgba(68, 66, 66, 0.329);
     --color-button-submit: rgb(89, 109, 72);
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: minomu, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
@@ -54,6 +64,7 @@ aside {
 }
 
 .logo {
+    font-family: norseBold, monospace;
     font-size: 3rem;
 
     display: flex;
