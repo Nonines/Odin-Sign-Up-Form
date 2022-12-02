@@ -45,7 +45,7 @@ a:active {
 }
 
 body {
-    height: 1020px;
+    height: 1120px;
 }
 
 .container {
@@ -84,7 +84,7 @@ aside {
 }
 
 .logo p {
-    font-size: 10vh;
+    font-size: 14vh;
 }
 
 aside > :last-child {
