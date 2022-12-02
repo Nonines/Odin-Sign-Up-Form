@@ -1,10 +1,10 @@
 const firstPasswordInput = document.querySelector("input#password");
 const confirmPasswordInput = document.querySelector("input#confirm");
 
-confirmPasswordInput.addEventListener("input", passwordMatches);
-firstPasswordInput.addEventListener("input", passwordMatches);
+confirmPasswordInput.addEventListener("input", handlePasswordMatching);
+firstPasswordInput.addEventListener("input", handlePasswordMatching);
 
-function passwordMatches() {
+function handlePasswordMatching() {
     const firstPassValue = firstPasswordInput.value;
     const confirmPassValue = confirmPasswordInput.value;
 
@@ -14,11 +14,12 @@ function passwordMatches() {
     } else if (!(firstPassValue === confirmPassValue)) {
         firstPasswordInput.classList.add("input-error");
         confirmPasswordInput.classList.add("input-error");
-
-    } else {
-        firstPasswordInput.classList.remove("input-error");
-        confirmPasswordInput.classList.remove("input-error");
+        return;
     }
 
+    firstPasswordInput.classList.remove("input-error");
+    confirmPasswordInput.classList.remove("input-error");
     return;
 }
+
+// On submit, if the error class still exists, prevent default
