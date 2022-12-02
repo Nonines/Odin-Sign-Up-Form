@@ -179,6 +179,14 @@ main .form-container {
     border: 2px solid crimson;
 }
 
+
+.form-container .input-error + span::after {
+    content: "* Passwords do not match";
+    font-size: 12px;
+    color: crimson;
+    display: block;
+}
+
 main .account {
     margin-top: 7px;
     height: calc(35% - 7px);
