@@ -171,6 +171,14 @@ main .form-container {
     box-shadow: 2px 2px 4px 2px var(--color-shadow-dark);
 }
 
+.form-container .input-error {
+    border-color: crimson;
+}
+
+.form-container .input-error:focus {
+    border: 2px solid crimson;
+}
+
 main .account {
     margin-top: 7px;
     height: calc(35% - 7px);
