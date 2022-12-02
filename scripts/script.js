@@ -23,3 +23,9 @@ function handlePasswordMatching() {
 }
 
 // On submit, if the error class still exists, prevent default
+const submitButton = document.querySelector("button");
+submitButton.addEventListener("click", function(event) {
+    if (confirmPasswordInput.classList.contains("input-error")) {
+        event.preventDefault();
+    }
+});
